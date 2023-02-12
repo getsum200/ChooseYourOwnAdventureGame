@@ -30,10 +30,12 @@ def get_player_info():
     return name, age
 
 
-def game():
-    health = 20
-    name, age = get_player_info()
-    if age >= 20:
+
+def play_game():
+
+     health = 20
+     name, age = get_player_info()
+     if age >= 20:
         print("Great! You're old enough to play")
         wants_to_play = input("Do you think you're good enough to beat this game? ").lower()
         if wants_to_play == "yes":
@@ -71,10 +73,10 @@ def game():
         else:
             print("Why did you bother wasting both of our times...")
             print("You can leave now")
-    elif age >=13:
+     elif age >=13:
         print("You can play but bring a spare pare of pants")
-    else:
+     else:
         print("You're not old enough to play.")
         print("You can leave now")
 
-game()
+play_game()
